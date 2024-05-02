@@ -1,0 +1,1 @@
+  implementation("com.oracle.database.jdbc:ojdbcó:11.2.0.4")
