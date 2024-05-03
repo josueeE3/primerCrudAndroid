@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -44,5 +46,15 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        val rcbDatos = findViewById<RecyclerView>(R.id.rcbDatos)
+
+        rcbDatos.layoutManager = LinearLayoutManager(this)
+
+        val miAdaptador = Adaptador(ListaDeDatos )
+
     }
+}
+
+class Adaptador(private val Datos: Array<String>){
+
 }
