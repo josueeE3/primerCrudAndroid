@@ -50,11 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         rcbDatos.layoutManager = LinearLayoutManager(this)
 
-        val miAdaptador = Adaptador(ListaDeDatos )
 
     }
 }
 
-class Adaptador(private val Datos: Array<String>){
-
-}
